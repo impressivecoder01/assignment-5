@@ -33,6 +33,7 @@ const donateButtonTwo = () => {
     document.getElementById('donate-btn-two').addEventListener("click" , ()=>{
         donateHandlerTwo()
         updateFirstBalanceTwo()
+        donationHistoryTwo()
     })
 }
 
@@ -108,7 +109,19 @@ const donationHistory = () => {
 historyConatainer.appendChild(div)
 }
 
-
+const donationHistoryTwo = () => {
+    const secondCardTitle = document.getElementById("second-title").innerText;
+    const getInputBalance = parseInt(document.getElementById("total-balanceTwo").value)
+    const historyConatainer = document.getElementById("history-container");
+    const div = document.createElement("div");
+    div.classList.add("p-4", "rounded-sm");
+    div.innerHTML = `
+    <h2 class = "font-bold">${secondCardTitle}</h2>
+    <p>Donation amount:${getInputBalance} </p>
+    <p>Date:${new Date()}</p>
+`
+historyConatainer.appendChild(div) 
+}
 
 
 // const donateButtonstwo = document.querySelectorAll('.donate-btn')
