@@ -19,7 +19,7 @@
             </div>
             <div class=" text-center md:flex items-center gap-1">
                 <img src="./assets/coin.png" alt="">
-                <p id="nav-balance" class="text-xl text-[#111111]">5500 BDT</p>
+                <p class="text-xl text-[#111111]"><span id="nav-balance">5500</span> </p>
             </div>
         </nav>
         <!-- banner btns -->
@@ -35,18 +35,18 @@
             <div class="flex flex-col md:flex-row gap-3 justify-between items-center">
                 <div class="w-full h-full">
                     <!-- img div -->
-                     <img class="object-contain " src="./assets/quota-protest.png" alt="error">
+                     <img class="object-contain md:h-full w-full" src="./assets/noakhali.png" alt="error">
                 </div>
                 <div class="flex flex-col gap-4 h-full">
                     <div class="flex gap-1 bg-gray-400 w-36 py-2 px-4 rounded-lg">
                         <img class="object-contain" src="./assets/coin.png" alt="error">
-                        <p class="text-xl">500 BDT</p>
+                        <p  class="text-xl"><span id="first-card-balance">500</span> BDT</p>
                      </div>
                     <!-- text div -->
                      <h2 class="font-bold text-xl">Aid for Injured in the Quota Movement</h2>
                      <p class="font-light text-[16px]">Recent floods in Noakhali have caused extensive damage, displacing over 1.6 million people and severely affecting agriculture and infrastructure. Relief efforts are underway, but challenges persist in reaching remote areas</p>
-                     <input  type="text" placeholder="Type here" class="input-field input input-bordered w-full" />
-                     <button class=" bg-[#B4F461] px-6 py-3 rounded-xl font-semibold text-xl donate-btn">Donate Now</button>
+                     <input  type="text" placeholder="Type here" id="total-balance" class="input-field input input-bordered w-full" />
+                     <button onclick="donateButton()" class=" bg-[#B4F461] px-6 py-3 rounded-xl font-semibold text-xl donate-btn" id="donate-btn-one">Donate Now</button>
                 </div>
             </div>
             
@@ -54,23 +54,23 @@
         <!-- first card end -->
 
         <!-- second card start -->
-        <section class=" border rounded-lg rounded-4 px-4 py-2">
+        <section class=" border rounded-lg rounded-4 px-4 py-2 my-9">
             <!--  -->
             <div class="flex flex-col md:flex-row gap-3 justify-between items-center">
                 <div class="w-full h-full">
                     <!-- img div -->
-                     <img class="object-contain " src="./assets/quota-protest.png" alt="error">
+                     <img class="object-contain " src="./assets/feni.png" alt="error">
                 </div>
                 <div class="flex flex-col gap-4 h-full">
                     <div class="flex gap-1 bg-gray-400 w-36 py-2 px-4 rounded-lg">
                         <img class="object-contain" src="./assets/coin.png" alt="error">
-                        <p class="text-xl">500 BDT</p>
+                        <p class="text-xl"><span id="second-card-balance">500</span> BDT</p>
                      </div>
                     <!-- text div -->
                      <h2 class="font-bold text-xl">Aid for Injured in the Quota Movement</h2>
                      <p class="font-light text-[16px]">Recent floods in Noakhali have caused extensive damage, displacing over 1.6 million people and severely affecting agriculture and infrastructure. Relief efforts are underway, but challenges persist in reaching remote areas</p>
-                     <input  type="text" placeholder="Type here" class="input-field input input-bordered w-full" />
-                     <button class=" bg-[#B4F461] px-6 py-3 rounded-xl font-semibold text-xl donate-btn">Donate Now</button>
+                     <input  type="text" placeholder="Type here" id="total-balanceTwo" class="input-field input input-bordered w-full" />
+                     <button onclick="donateButtonTwo()" id="donate-btn-two" class=" bg-[#B4F461] px-6 py-3 rounded-xl font-semibold text-xl donate-btn">Donate Now</button>
                 </div>
             </div>
             
@@ -88,13 +88,13 @@
                 <div class="flex flex-col gap-4 h-full">
                     <div class="flex gap-1 bg-gray-400 w-36 py-2 px-4 rounded-lg">
                         <img class="object-contain" src="./assets/coin.png" alt="error">
-                        <p class="text-xl">500 BDT</p>
+                        <p class="text-xl"><span id="third-card-balance">500</span> BDT</p>
                      </div>
                     <!-- text div -->
                      <h2 class="font-bold text-xl">Aid for Injured in the Quota Movement</h2>
                      <p class="font-light text-[16px]">Recent floods in Noakhali have caused extensive damage, displacing over 1.6 million people and severely affecting agriculture and infrastructure. Relief efforts are underway, but challenges persist in reaching remote areas</p>
-                     <input  type="text" placeholder="Type here" class="input-field input input-bordered w-full" />
-                     <button class=" bg-[#B4F461] px-6 py-3 rounded-xl font-semibold text-xl donate-btn">Donate Now</button>
+                     <input id="total-balance-three"  type="text" placeholder="Type here" class="input-field input input-bordered w-full" />
+                     <button onclick="donateHandlerThree()" id="donate-btn-three" class=" bg-[#B4F461] px-6 py-3 rounded-xl font-semibold text-xl donate-btn">Donate Now</button>
                 </div>
             </div>
             
