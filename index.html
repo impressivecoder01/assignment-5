@@ -24,12 +24,13 @@
         </nav>
         <!-- banner btns -->
         <div class="flex justify-center gap-3 pb-2">
-            <button class="font-semibold">Donation</button>
-            <button class="font-semibold">History</button>
+            <button id="donation-btn" class="font-semibold btn btn-accent px-8">Donation</button>
+            <button id="history-btn" class="font-semibold btn px-8">History</button>
          </div>
     </header>
-    <main class="w-9/12	 mx-auto my-6">
-        <!-- first card -->
+    <main class="">
+        <section class="donation-section w-9/12	 mx-auto my-">
+            <!-- first card -->
         <section class=" border rounded-lg rounded-4 px-4 py-2">
             <!--  -->
             <div class="flex flex-col md:flex-row gap-3 justify-between items-center">
@@ -43,7 +44,7 @@
                         <p  class="text-xl"><span id="first-card-balance">500</span> BDT</p>
                      </div>
                     <!-- text div -->
-                     <h2 id="first-title" class="font-bold text-xl">Aid for Injured in the Quota Movement</h2>
+                     <h2 id="first-title" class="font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</h2>
                      <p class="font-light text-[16px]">Recent floods in Noakhali have caused extensive damage, displacing over 1.6 million people and severely affecting agriculture and infrastructure. Relief efforts are underway, but challenges persist in reaching remote areas</p>
                      <input  type="text" placeholder="Type here" id="total-balance" class="input-field input input-bordered w-full" />
                      <button onclick="donateButton()" class=" bg-[#B4F461] px-6 py-3 rounded-xl font-semibold text-xl donate-btn" id="donate-btn-one">Donate Now</button>
@@ -67,7 +68,7 @@
                         <p class="text-xl"><span id="second-card-balance">500</span> BDT</p>
                      </div>
                     <!-- text div -->
-                     <h2 id="second-title" class="font-bold text-xl">Aid for Injured in the Quota Movement</h2>
+                     <h2 id="second-title" class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h2>
                      <p class="font-light text-[16px]">Recent floods in Noakhali have caused extensive damage, displacing over 1.6 million people and severely affecting agriculture and infrastructure. Relief efforts are underway, but challenges persist in reaching remote areas</p>
                      <input  type="text" placeholder="Type here" id="total-balanceTwo" class="input-field input input-bordered w-full" />
                      <button onclick="donateButtonTwo()" id="donate-btn-two" class=" bg-[#B4F461] px-6 py-3 rounded-xl font-semibold text-xl donate-btn">Donate Now</button>
@@ -91,7 +92,7 @@
                         <p class="text-xl"><span id="third-card-balance">500</span> BDT</p>
                      </div>
                     <!-- text div -->
-                     <h2 class="font-bold text-xl">Aid for Injured in the Quota Movement</h2>
+                     <h2 id="third-title" class="font-bold text-xl">Aid for Injured in the Quota Movement</h2>
                      <p class="font-light text-[16px]">Recent floods in Noakhali have caused extensive damage, displacing over 1.6 million people and severely affecting agriculture and infrastructure. Relief efforts are underway, but challenges persist in reaching remote areas</p>
                      <input id="total-balance-three"  type="text" placeholder="Type here" class="input-field input input-bordered w-full" />
                      <button onclick="donateButtonThree()" id="donate-btn-three" class=" bg-[#B4F461] px-6 py-3 rounded-xl font-semibold text-xl donate-btn">Donate Now</button>
@@ -100,6 +101,10 @@
             
          </section>
         <!-- third card end -->
+        </section>
+        
+
+        <!-- modal section -->
         <dialog id="show-modal-btn" class="modal modal-button sm:modal-middle">
             <div class="modal-box">
                 <h3 class="text-4xl font-bold text-center">Done Successfully</h3>

@@ -54,6 +54,7 @@ const donateButtonThree = () => {
     document.getElementById("donate-btn-three").addEventListener("click", () => {
         donateHandlerThree()
         updateFirstBalanceThree()
+        donationHistoryThree()
     })
 }
 
@@ -122,6 +123,32 @@ const donationHistoryTwo = () => {
 `
 historyConatainer.appendChild(div) 
 }
+
+const donationHistoryThree = () => {
+    const thirdCardTitle = document.getElementById("third-title").innerText;
+    const getInputBalance = parseInt(document.getElementById("total-balance-three").value)
+    const historyConatainer = document.getElementById("history-container");
+    const div = document.createElement("div");
+    div.classList.add("p-4", "rounded-sm");
+    div.innerHTML = `
+    <h2 class = "font-bold">${thirdCardTitle}</h2>
+    <p>Donation amount:${getInputBalance} </p>
+    <p>Date:${new Date()}</p>
+`
+historyConatainer.appendChild(div) 
+}
+
+document.getElementById("donation-btn").addEventListener("click", ()=>{
+    document.getElementById("donation-btn").classList.add("btn-accent");
+    document.getElementById("history-btn").classList.remove("btn-accent")
+})
+
+document.getElementById("history-btn").addEventListener("click", ()=>{
+    document.getElementById("history-btn").classList.add("btn-accent");
+    document.getElementById("donation-btn").classList.remove("btn-accent")
+})
+
+
 
 
 // const donateButtonstwo = document.querySelectorAll('.donate-btn')
