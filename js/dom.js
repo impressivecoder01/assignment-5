@@ -20,6 +20,7 @@ const donateHandler = () => {
     if(typeof navBalance === "number" && typeof getInputBalance === "number" && navBalance > getInputBalance) {
         const remainingBalance = navBalance - getInputBalance;
         document.getElementById('nav-balance').innerHTML = `${remainingBalance} BDT`
+        document.getElementById("show-modal-btn").showModal()
     }
     else{
         alert('something is wrong')
@@ -39,6 +40,7 @@ const donateHandlerTwo = () => {
     if(typeof navBalance === "number" && typeof getInputBalanceTwo === "number" && navBalance > getInputBalanceTwo) {
         const remainingBalanceTwo = navBalance - getInputBalanceTwo;
         document.getElementById("nav-balance").innerHTML = `${remainingBalanceTwo} BDT`
+        document.getElementById("show-modal-btn").showModal()
     }
     else{
         alert("donation not done properly")
@@ -57,6 +59,7 @@ const donateHandlerThree = () => {
         if(typeof navBalance === "number" && typeof getInputBalanceThree === "number" && navBalance > getInputBalanceThree){
             const remainingBalanceThree = navBalance - getInputBalanceThree
             document.getElementById("nav-balance").innerHTML = ` ${remainingBalanceThree} BDT`
+            document.getElementById("show-modal-btn").showModal()
         }
         else{
             alert("not done")
