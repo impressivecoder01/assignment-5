@@ -10,6 +10,7 @@ const donateButton = () =>  {
     document.getElementById("donate-btn-one").addEventListener("click", ()=>{
         donateHandler()
         updateFirstBalance()
+        donationHistory()
     })
 }
 
@@ -31,6 +32,7 @@ const donateHandler = () => {
 const donateButtonTwo = () => {
     document.getElementById('donate-btn-two').addEventListener("click" , ()=>{
         donateHandlerTwo()
+        updateFirstBalanceTwo()
     })
 }
 
@@ -50,6 +52,7 @@ const donateHandlerTwo = () => {
 const donateButtonThree = () => {
     document.getElementById("donate-btn-three").addEventListener("click", () => {
         donateHandlerThree()
+        updateFirstBalanceThree()
     })
 }
 
@@ -74,14 +77,36 @@ const updateFirstBalance = () => {
    document.getElementById("first-card-balance").innerText = update 
 }
 
+const updateFirstBalanceTwo = () => {
+    const getSecond = parseInt(document.getElementById("second-card-balance").innerText);
+    const getInputBalance = parseInt(document.getElementById("total-balanceTwo").value);
+    const update = getSecond + getInputBalance
+    document.getElementById("second-card-balance").innerText = update
+}
+
+
+const updateFirstBalanceThree = () => {
+    const getThird = parseInt(document.getElementById("third-card-balance").innerText);
+    const getInputBalance = parseInt(document.getElementById("total-balance-three").value);
+    const update = getThird + getInputBalance;
+    document.getElementById("third-card-balance").innerText = update
+}
 
 
 
-
-
-
-
-
+const donationHistory = () => {
+    const firstCardTitle = document.getElementById("first-title").innerText;
+    const getInputBalance =parseInt(document.getElementById('total-balance').value)
+    const historyConatainer = document.getElementById("history-container");
+    const div = document.createElement("div");
+    div.classList.add("p-4", "rounded-sm");
+    div.innerHTML = `
+    <h2 class = "font-bold">${firstCardTitle}</h2>
+    <p>Donation amount:${getInputBalance} </p>
+    <p>Date:${new Date()}</p>
+`
+historyConatainer.appendChild(div)
+}
 
 
 
