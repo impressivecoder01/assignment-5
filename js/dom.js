@@ -141,11 +141,15 @@ historyConatainer.appendChild(div)
 document.getElementById("donation-btn").addEventListener("click", ()=>{
     document.getElementById("donation-btn").classList.add("btn-accent");
     document.getElementById("history-btn").classList.remove("btn-accent")
+    document.getElementById("donation-section").classList.remove("hidden")
+    document.getElementById("history-container").classList.add("hidden")
 })
 
 document.getElementById("history-btn").addEventListener("click", ()=>{
     document.getElementById("history-btn").classList.add("btn-accent");
     document.getElementById("donation-btn").classList.remove("btn-accent")
+    document.getElementById("donation-section").classList.add("hidden")
+    document.getElementById("history-container").classList.remove("hidden")
 })
 
 
