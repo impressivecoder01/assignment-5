@@ -26,50 +26,54 @@ const donateHandler = () => {
         donationHistory()
     }
     else{
-        alert('something is wrong')
+        alert("The donation for flood relief in Feni, Bangladesh has failed.")
     }
 }
 
 
-const donateButtonTwo = () => {
-    document.getElementById('donate-btn-two').addEventListener("click" , ()=>{
-        donateHandlerTwo()
-        updateFirstBalanceTwo()
-        donationHistoryTwo()
-    })
-}
+// const donateButtonTwo = () => {
+//     document.getElementById('donate-btn-two').addEventListener("click" , ()=>{
+//         donateHandlerTwo()
+//         updateFirstBalanceTwo()
+//         donationHistoryTwo()
+//     })
+// }
 
 const donateHandlerTwo = () => {
     const getInputBalanceTwo = parseInt(document.getElementById('total-balanceTwo').value);
     const navBalance = parseInt(document.getElementById("nav-balance").innerText);
     if(typeof navBalance === "number" && typeof getInputBalanceTwo === "number" && navBalance > getInputBalanceTwo) {
         const remainingBalanceTwo = navBalance - getInputBalanceTwo;
-        document.getElementById("nav-balance").innerHTML = `${remainingBalanceTwo} BDT`
+        document.getElementById("nav-balance").innerText = remainingBalanceTwo
         document.getElementById("show-modal-btn").showModal()
+        updateFirstBalanceTwo()
+        donationHistoryTwo()
     }
     else{
-        alert("donation not done properly")
+        alert("Donate for Flood at Noakhali, Bangladesh has failed.")
     }
 }
 
-const donateButtonThree = () => {
-    document.getElementById("donate-btn-three").addEventListener("click", () => {
-        donateHandlerThree()
-        updateFirstBalanceThree()
-        donationHistoryThree()
-    })
-}
+// const donateButtonThree = () => {
+//     document.getElementById("donate-btn-three").addEventListener("click", () => {
+//         donateHandlerThree()
+//         updateFirstBalanceThree()
+//         donationHistoryThree()
+//     })
+// }
 
 const donateHandlerThree = () => {
     const getInputBalanceThree = parseInt(document.getElementById("total-balance-three").value);
         const navBalance = parseInt(document.getElementById("nav-balance").innerText)
         if(typeof navBalance === "number" && typeof getInputBalanceThree === "number" && navBalance > getInputBalanceThree){
             const remainingBalanceThree = navBalance - getInputBalanceThree
-            document.getElementById("nav-balance").innerHTML = ` ${remainingBalanceThree} BDT`
+            document.getElementById("nav-balance").innerText = remainingBalanceThree
             document.getElementById("show-modal-btn").showModal()
+            updateFirstBalanceThree()
+            donationHistoryThree()
         }
         else{
-            alert("not done")
+            alert("Aid for Injured in the Quota Movement has failed")
         }
 }
 
