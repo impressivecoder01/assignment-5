@@ -109,7 +109,7 @@ const donationHistory = () => {
     const div = document.createElement("div");
     div.classList.add("p-4", "rounded-sm");
     div.innerHTML = `
-    <h2 class = "font-bold">${getInputBalance} Taka is Donated for Flood Relief in Feni,Bangladesh</h2>
+    <h2 class = "font-bold">${getInputBalance} Taka is Donated for Donate for Flood Relief in Feni, Bangladesh</h2>
     <p class="font-semibold">Donation amount: ${getInputBalance} </p>
     <p>Date:${new Date()}</p>
 `
@@ -123,8 +123,8 @@ const donationHistoryTwo = () => {
     const div = document.createElement("div");
     div.classList.add("p-4", "rounded-sm");
     div.innerHTML = `
-    <h2 class = "font-bold">${getInputBalance} Taka is Donated for Flood at Noakhali, Bangladesh</h2>
-    <p class="font-semibold>Donation amount: ${getInputBalance} </p>
+    <h2 class = "font-bold">${getInputBalance} Taka is Donated for Donate for Flood at Noakhali, Bangladesh</h2>
+    <p class="font-semibold">Donation amount: ${getInputBalance} </p>
     <p>Date:${new Date()}</p>
 `
 historyConatainer.appendChild(div) 
@@ -137,7 +137,7 @@ const donationHistoryThree = () => {
     const div = document.createElement("div");
     div.classList.add("p-4", "rounded-sm");
     div.innerHTML = `
-    <h2 class = "font-bold">${getInputBalance} Taka is aided for Injured in the Quota Movement</h2>
+    <h2 class = "font-bold">${getInputBalance} Taka is aided for Aid for Injured in the Quota Movement</h2>
     <p class="font-semibold">Donation amount: ${getInputBalance} </p>
     <p>Date:${new Date()}</p>
 `
@@ -158,8 +158,18 @@ document.getElementById("history-btn").addEventListener("click", ()=>{
     document.getElementById("history-container").classList.remove("hidden")
 })
 
+// common function for faq section
 
-
+// const dtElements = document.querySelectorAll("dt")
+// dtElements.forEach(element =>{
+//     element.addEventListener("click", ()=>{
+//         const ddId = element.getAttribute("aria-controls");
+//         const ddElement = document.getElementById(ddId);
+//         const ddArrow = element.querySelectorAll('i')[0]
+//         ddElement.classList.toggle('hidden')
+//         ddArrow.classList.toggle("-rotate-180")
+//     })
+// })
 
 // const donateButtonstwo = document.querySelectorAll('.donate-btn')
 // for(const donateButton of donateButtons){
