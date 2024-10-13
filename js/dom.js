@@ -1,18 +1,4 @@
-// const donateButton = document.getElementById('donate-btn-one')
-// for(const donateButton of donateButtons){
-//     donateButton.addEventListener('click', ()=>{
-//         donateHandler()
-//         // donateHandlerTwo()
-//     })
-// }
 
-// const donateButton = () =>  {
-//     document.getElementById("donate-btn-one").addEventListener("click", ()=>{
-//         donateHandler()
-//         updateFirstBalance()
-//         donationHistory()
-//     })
-// }
 
 const donateHandler = () => {
     const getInputBalance =parseInt(document.getElementById('total-balance').value) ;
@@ -31,13 +17,7 @@ const donateHandler = () => {
 }
 
 
-// const donateButtonTwo = () => {
-//     document.getElementById('donate-btn-two').addEventListener("click" , ()=>{
-//         donateHandlerTwo()
-//         updateFirstBalanceTwo()
-//         donationHistoryTwo()
-//     })
-// }
+
 
 const donateHandlerTwo = () => {
     const getInputBalanceTwo = parseInt(document.getElementById('total-balanceTwo').value);
@@ -54,13 +34,7 @@ const donateHandlerTwo = () => {
     }
 }
 
-// const donateButtonThree = () => {
-//     document.getElementById("donate-btn-three").addEventListener("click", () => {
-//         donateHandlerThree()
-//         updateFirstBalanceThree()
-//         donationHistoryThree()
-//     })
-// }
+
 
 const donateHandlerThree = () => {
     const getInputBalanceThree = parseInt(document.getElementById("total-balance-three").value);
@@ -158,37 +132,3 @@ document.getElementById("history-btn").addEventListener("click", ()=>{
     document.getElementById("history-container").classList.remove("hidden")
 })
 
-// common function for faq section
-
-// const dtElements = document.querySelectorAll("dt")
-// dtElements.forEach(element =>{
-//     element.addEventListener("click", ()=>{
-//         const ddId = element.getAttribute("aria-controls");
-//         const ddElement = document.getElementById(ddId);
-//         const ddArrow = element.querySelectorAll('i')[0]
-//         ddElement.classList.toggle('hidden')
-//         ddArrow.classList.toggle("-rotate-180")
-//     })
-// })
-
-// const donateButtonstwo = document.querySelectorAll('.donate-btn')
-// for(const donateButton of donateButtons){
-//     donateButton.addEventListener('click', ()=>{
-//         donateHandler()
-//         donateHandlerTwo()
-//     })
-// }
-
-
-
-// const donateHandlerTwo = () => {
-//     const getInputBalanceTwo = parseInt(document.getElementById("total-balanceTwo").value);
-//     const navBalance = parseInt(document.getElementById("nav-balance").innerText)
-//     if(typeof navBalance === "number" && typeof getInputBalanceTwo === "number" && navBalance > getInputBalanceTwo){
-//         const remainingBalanceTwo = navBalance - getInputBalanceTwo
-//         document.getElementById("nav-balance").innerText = remainingBalanceTwo
-//     }
-//     else{
-//         alert("something is wrong.")
-//     }
-// }
