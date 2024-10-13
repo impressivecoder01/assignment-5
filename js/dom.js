@@ -6,13 +6,13 @@
 //     })
 // }
 
-const donateButton = () =>  {
-    document.getElementById("donate-btn-one").addEventListener("click", ()=>{
-        donateHandler()
-        updateFirstBalance()
-        donationHistory()
-    })
-}
+// const donateButton = () =>  {
+//     document.getElementById("donate-btn-one").addEventListener("click", ()=>{
+//         donateHandler()
+//         updateFirstBalance()
+//         donationHistory()
+//     })
+// }
 
 const donateHandler = () => {
     const getInputBalance =parseInt(document.getElementById('total-balance').value) ;
@@ -20,8 +20,10 @@ const donateHandler = () => {
     const navBalance =parseInt(document.getElementById('nav-balance').innerText);
     if(typeof navBalance === "number" && typeof getInputBalance === "number" && navBalance > getInputBalance) {
         const remainingBalance = navBalance - getInputBalance;
-        document.getElementById('nav-balance').innerHTML = `${remainingBalance} BDT`
+        document.getElementById('nav-balance').innerText = remainingBalance
         document.getElementById("show-modal-btn").showModal()
+        updateFirstBalance()
+        donationHistory()
     }
     else{
         alert('something is wrong')
