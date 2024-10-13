@@ -109,8 +109,8 @@ const donationHistory = () => {
     const div = document.createElement("div");
     div.classList.add("p-4", "rounded-sm");
     div.innerHTML = `
-    <h2 class = "font-bold">${firstCardTitle}</h2>
-    <p>Donation amount:${getInputBalance} </p>
+    <h2 class = "font-bold">${getInputBalance} Taka is Donated for Flood Relief in Feni,Bangladesh</h2>
+    <p class="font-semibold">Donation amount: ${getInputBalance} </p>
     <p>Date:${new Date()}</p>
 `
 historyConatainer.appendChild(div)
@@ -123,8 +123,8 @@ const donationHistoryTwo = () => {
     const div = document.createElement("div");
     div.classList.add("p-4", "rounded-sm");
     div.innerHTML = `
-    <h2 class = "font-bold">${secondCardTitle}</h2>
-    <p>Donation amount:${getInputBalance} </p>
+    <h2 class = "font-bold">${getInputBalance} Taka is Donated for Flood at Noakhali, Bangladesh</h2>
+    <p class="font-semibold>Donation amount: ${getInputBalance} </p>
     <p>Date:${new Date()}</p>
 `
 historyConatainer.appendChild(div) 
@@ -137,8 +137,8 @@ const donationHistoryThree = () => {
     const div = document.createElement("div");
     div.classList.add("p-4", "rounded-sm");
     div.innerHTML = `
-    <h2 class = "font-bold">${thirdCardTitle}</h2>
-    <p>Donation amount:${getInputBalance} </p>
+    <h2 class = "font-bold">${getInputBalance} Taka is aided for Injured in the Quota Movement</h2>
+    <p class="font-semibold">Donation amount: ${getInputBalance} </p>
     <p>Date:${new Date()}</p>
 `
 historyConatainer.appendChild(div) 
